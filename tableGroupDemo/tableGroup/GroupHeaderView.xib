@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GroupHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1w-Ac-CeD">
+                    <rect key="frame" x="30" y="5" width="210" height="58"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0z-NG-scC">
+                    <rect key="frame" x="240" y="5" width="60" height="58"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Yy5-AZ-GyB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right.png" translatesAutoresizingMaskIntoConstraints="NO" id="qXo-6Z-jfM">
+                    <rect key="frame" x="10" y="29.5" width="10" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="qXo-6Z-jfM" secondAttribute="height" id="Hj8-Yv-NtG"/>
+                        <constraint firstAttribute="width" constant="10" id="S8n-OO-aeF"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bg7-qQ-aR9">
+                    <rect key="frame" x="0.0" y="67" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.95550471540000004" green="0.95621544120000002" blue="0.95902460810000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="rka-3Z-rne"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="R1w-Ac-CeD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="0qR-Gc-qRK"/>
+                <constraint firstAttribute="trailing" secondItem="Bg7-qQ-aR9" secondAttribute="trailing" id="ASh-m4-hne"/>
+                <constraint firstAttribute="bottom" secondItem="R1w-Ac-CeD" secondAttribute="bottom" constant="5" id="CxF-PX-PI9"/>
+                <constraint firstItem="R1w-Ac-CeD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="Ngp-Yy-LKq"/>
+                <constraint firstAttribute="trailing" secondItem="b0z-NG-scC" secondAttribute="trailing" constant="20" id="PYf-y5-5Lv"/>
+                <constraint firstItem="qXo-6Z-jfM" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Pu9-cG-cuf"/>
+                <constraint firstItem="R1w-Ac-CeD" firstAttribute="leading" secondItem="qXo-6Z-jfM" secondAttribute="trailing" constant="10" id="XwX-XO-N5k"/>
+                <constraint firstItem="b0z-NG-scC" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ZUG-6N-Pe8"/>
+                <constraint firstItem="R1w-Ac-CeD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="aMY-AB-Z3U"/>
+                <constraint firstItem="Bg7-qQ-aR9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dWU-7t-drv"/>
+                <constraint firstAttribute="bottom" secondItem="Bg7-qQ-aR9" secondAttribute="bottom" id="hHy-F9-2tF"/>
+                <constraint firstAttribute="bottom" secondItem="b0z-NG-scC" secondAttribute="bottom" constant="5" id="m74-0D-gem"/>
+                <constraint firstItem="b0z-NG-scC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="zCz-Lq-w4R"/>
+                <constraint firstItem="b0z-NG-scC" firstAttribute="leading" secondItem="R1w-Ac-CeD" secondAttribute="trailing" id="zDC-gc-8Eq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="countLabel" destination="b0z-NG-scC" id="mCc-7T-upl"/>
+                <outlet property="expandImage" destination="qXo-6Z-jfM" id="OgH-WP-R6A"/>
+                <outlet property="titleLabel" destination="R1w-Ac-CeD" id="RQl-DB-xh3"/>
+            </connections>
+            <point key="canvasLocation" x="-212" y="-373"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="right.png" width="30" height="30"/>
+    </resources>
+</document>
